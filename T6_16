@@ -1,0 +1,41 @@
+/*
+Filename:T6_16.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Apl 10th, 2022
+College: School of Computer Science and InformationEngineering
+Function:把特定范围内的随机整数赋给变量n
+*/
+#include <iostream>
+#include<cstdio>
+#include<stdlib.h>
+
+using namespace std;
+
+int main()
+{
+    //(a)
+    int n;
+    n=rand()%2+1;
+    cout<<"++++++++++"<<endl;
+    //(b)
+    n=1;
+    n=rand()%100+1;
+    cout<<"++++++++++"<<endl;
+    //(c)
+    n=1;
+    n=rand()%10+0;
+    cout<<"++++++++++"<<endl;
+    //(d)
+    n=1;
+    n=rand()%113+1000;
+    cout<<"++++++++++"<<endl;
+    //(e)
+    n=1;
+    n=rand()%2-1;
+    cout<<"++++++++++"<<endl;
+    //(f)
+    n=1;
+    n=rand()%15+-3;
+    return 0;
+}
