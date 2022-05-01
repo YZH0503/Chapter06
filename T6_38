@@ -1,0 +1,32 @@
+/*
+Filename:T6_38.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Apl 17th, 2022
+College: School of Computer Science and InformationEngineering
+Function:汉诺塔问题
+*/
+#include <iostream>
+
+using namespace std;
+
+void T(int a,char b,char c,char d)
+{
+    if(a==1)
+    {
+        cout<<"1¡ú3"<<"\n1¡ú2"<<"\n3¡ú2"<<"\n1¡ú3"<<"\n2¡ú1"<<"\n2¡ú3"<<"\n1¡ú3"<<endl;
+    }
+    else
+    {
+    T(a-1,b,d,c);
+    cout<<"1¡ú3"<<endl;
+    T(a-1,d,c,b);
+    }
+}
+int main()
+{
+    int x,b,l,y;
+    cin>>x>>b>>l>>y;
+    T(x,b,l,y);
+    return 0;
+}
