@@ -1,0 +1,21 @@
+/*
+Filename:T6_25.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Apl 12th, 2022
+College: School of Computer Science and InformationEngineering
+Function:秒数计算
+*/
+
+#include <iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+    int x,y,z,a,b,c;
+    cin>>x>>y>>z>>a>>b>>c;
+    cout<<abs(x-a)*3600+abs(y-b)*60+abs(z-c);
+      return 0;
+}
