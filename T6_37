@@ -1,0 +1,29 @@
+/*
+Filename:T2_37.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Apl 17th, 2022
+College: School of Computer Science and InformationEngineering
+Function:斐波那契数列迭代版
+*/
+#include <iostream>
+
+using namespace std;
+int fibonacci(int n)
+{
+    int i,a=0,b=1,c;
+    for(i=1;i<=n-1;i++)
+    {
+        c=a+b;
+        a=b;
+        b=c;
+    }
+    return c;
+}
+int main()
+{
+    int x;
+    cin>>x;
+    cout<<"Fibonacci("<<x<<")"<<"="<<fibonacci(x)<<endl;
+    return 0;
+}
