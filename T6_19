@@ -1,0 +1,22 @@
+/*
+Filename:T6_19.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Apl 10th, 2022
+College: School of Computer Science and InformationEngineering
+Function:¼ÆËãÖ±½ÇÈý½ÇÐÎÐ±±ß
+*/
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    double a,b,c;
+    cin>>a;
+    cin>>b;
+    c=sqrt(a*a+b*b);
+    cout<<c<<endl;
+    return 0;
+}
