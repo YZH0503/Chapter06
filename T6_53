@@ -1,0 +1,41 @@
+/*
+Filename:T6_53.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Apl 17th, 2022
+College: School of Computer Science and InformationEngineering
+Function:函数模板maximum
+*/
+#include <iostream>
+
+using namespace std;
+
+template <class T>
+T maximum(T a, T b)
+{
+	T min;
+	min = (a > b) ? a : b;
+	return min;
+}
+
+int main()
+{
+	int int1, int2;
+	cout << "Input two integer values: ";
+	cin >> int1 >> int2;
+	cout << "The maximum integer value is: ";
+	cout << maximum(int1, int2) << endl;
+
+	double double1, double2;
+	cout << "Input two double values: ";
+	cin >> double1 >> double2;
+	cout << "The maximum double value is: ";
+	cout << maximum(double1, double2) << endl;
+
+	char char1, char2;
+	cout << "Input two characters values: ";
+	cin >> char1 >> char2;
+	cout << "The maximum characters value is: ";
+	cout << maximum(char1, char2) << endl;
+	return 0;
+}
