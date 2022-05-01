@@ -1,0 +1,23 @@
+/*
+Filename:T6_27.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Apl 12th, 2022
+College: School of Computer Science and InformationEngineering
+Function:ÕÒ×îÐ¡Êý
+*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double x,y,z;
+    cin>>x>>y>>z;
+    double m=x;
+    if(x>y)
+        m=y;
+    if(m>z)
+        m=z;
+    cout<<m;
+}
