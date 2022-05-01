@@ -1,0 +1,31 @@
+/*
+Filename:T6_20.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Apl 12th, 2022
+College: School of Computer Science and InformationEngineering
+Function:判断一系列整数对中后一个是否为前一个的倍数
+*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b;
+    while(1)
+    {
+       cin>>a;
+    cin>>b;
+    if(b%a==0)
+    {
+        cout<<"true";
+    }
+    else
+    {
+        cout<<"false";
+    }
+    }
+
+    return 0;
+}
