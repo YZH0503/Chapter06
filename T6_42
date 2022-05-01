@@ -1,0 +1,32 @@
+/*
+Filename:T6_42.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Apl 17th, 2022
+College: School of Computer Science and InformationEngineering
+Function:两点之间的距离
+*/
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+double distance(double x1, double x2, double y1, double y2)
+{
+	double x;
+	double y;
+	double d;
+	x = x2 - x1;
+	y = y2 - y1;
+	d = sqrt(x * x + y * y);
+	return d;
+}
+int main()
+{
+	double x1;
+	double x2;
+	double y1;
+	double y2;
+	cin >> x1 >> y1 >> x2 >> y2;
+	cout << distance(x1, x2, y1, y2);
+	return 0;
+ }
