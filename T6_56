@@ -1,0 +1,18 @@
+/*
+Filename:T6_56.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Apl 17th, 2022
+College: School of Computer Science and InformationEngineering
+Function:C++11的作用域限定的枚举类型
+*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	enum class AccountType { SAVINGS, CHECKING, INVESTMENT };
+
+	return 0;
+}
