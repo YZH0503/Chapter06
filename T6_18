@@ -1,0 +1,24 @@
+/*
+Filename:T6_18.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Apl 10th, 2022
+College: School of Computer Science and InformationEngineering
+Function:直角三角形斜边的计算
+*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int base,exponent,a=1;
+    cin>>base;
+    cin>>exponent;
+    for(int i=0;i<exponent;i++)
+    {
+        a=a*base;
+    }
+    cout<<a<<endl;
+    return 0;
+}
