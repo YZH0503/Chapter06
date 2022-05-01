@@ -1,0 +1,43 @@
+/*
+Filename:T6_50.cpp
+Author:  Zehong Yang
+E-mail:  2579510685@qq.com
+Date:    Apl 17th, 2022
+College: School of Computer Science and InformationEngineering
+Function:按值传递和按引用传递
+*/
+#include <iostream>
+
+using namespace std;
+
+double tripleByValue( double count)
+{
+	double a;
+	a = 3 * count;
+	return a;
+}
+
+void tripleByReference(double &count)
+{
+	count = 3 * count;
+}
+
+int main()
+{
+	double count;
+	int a;
+	cin >> count;
+	cout << "If you want triple by reference , please choice 1 ." << endl;
+	cout << "If you want triple by value , please choice 0 .";
+	cin >> a;
+	if (a == 1)
+	{
+		tripleByReference(count);
+		cout << count;
+	}
+	else
+	{
+		cout << tripleByValue(count);
+	}
+	return 0;
+}
